@@ -3,7 +3,7 @@
 
 CC      = g++
 DEFINES = -DUNITY_CONNECTIONTESTER
-CFLAGS  = -Wall -lpthread $(DEFINES)
+CFLAGS  = -Wall -pthread $(DEFINES)
 DEBUG   = -ggdb
 INCLUDE = .
 PROGRAMNAME = ConnTester
