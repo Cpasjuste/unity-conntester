@@ -1,0 +1,16 @@
+Unity Connection Tester
+
+2.0.1f1 (25 Feb 2011)
+
+- (common) Added option for launching to background (daemon mode) on Linux.
+- (common) PID file now written after launch.
+- (common) Launch script for Linux added (start/stop/restart), , see config/unity-conntester.
+- (common) Command line parameters modified to match the other servers.
+- (common) All servers now use same logging facility
+- RakNet fix for when NAT detection sometimes reported Port Restricted when it was actually Full 
+  Cone or Address Restricted (revision 133).
+- RakNet fix for GetTime not being thread safe which sometimes caused disconnections on Linux (revision 130).
+
+2.0.0f1 (22 Sep 2011)
+
+- (common) Upgraded to use RakNet version 3.72
