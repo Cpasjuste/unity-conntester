@@ -112,6 +112,7 @@ int main(int argc, char *argv[])
 	int listenPort = 10737;
 	bool useLogFile = false;
 	bool daemonMode = false;
+	Log::sDebugLevel = 3;
 
 	// Setup phase
 #ifndef WIN32
@@ -253,13 +254,13 @@ int main(int argc, char *argv[])
 			ipCount++;
 		i++;
 	}
-	if (ipCount < 4)
-	{
-		Log::error_log("Not enough IP addresses to bind to.\n");
-		Log::error_log("To run the connection tester you need four public IP addresses available.\n\n");
-		cleanup();
-		return 1;
-	}
+	//if (ipCount < 4)
+	//{
+	//	Log::error_log("Not enough IP addresses to bind to.\n");
+	//	Log::error_log("To run the connection tester you need four public IP addresses available.\n\n");
+	//	cleanup();
+	//	return 1;
+	//}
 	
 	if (!bindToIP1)
 		bindToIP1 = ipList[0];
